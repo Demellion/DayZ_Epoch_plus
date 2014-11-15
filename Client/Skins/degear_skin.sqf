@@ -1,3 +1,4 @@
+// DT Demellion Degear script
 private ["_model"];
 _model = "Survivor2_DZ";
 // Skin Change
