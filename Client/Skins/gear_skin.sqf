@@ -1,5 +1,5 @@
 private ["_model","_clanmessage","_side"];
-// Skin change script by DT Demellion
+// Skin change script by DT Demellion.
 // Clans Skins, UIDs and names here
 // IMPORTANT: DO NOT put epoch functionary skins like traders skins
 // as this will result in a bugs and Anti-Hack bans for players.
