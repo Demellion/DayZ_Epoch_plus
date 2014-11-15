@@ -4,7 +4,7 @@ _gemID = "ItemTopaz";
 _gemName = "Topaz";
 _pname = name player;
 if (_hoverGambler && (player distance _cursorTarget <= 3)) then {
-//------- Animation sequence start ----------
+//------- Animation sequence start -----------
     disableuserinput true;
     disableuserinput true;
     disableuserinput true;
