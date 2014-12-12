@@ -91,42 +91,45 @@ CN10 = "Name";
 
 // Checks and assocs
 /* Admin Skins */
-if ((getPlayerUID player) in A1) then {_model = AM1; _clanmessage = "Welcome"; _side = createGroup west;};
-if ((getPlayerUID player) in A2) then {_model = AM2; _clanmessage = "Weclome"; _side = createGroup west;};
-if ((getPlayerUID player) in A3) then {_model = AM3; _clanmessage = "Welcome"; _side = createGroup west;};
-if ((getPlayerUID player) in A4) then {_model = AM4; _clanmessage = "Welcome"; _side = createGroup west;};
-if ((getPlayerUID player) in A5) then {_model = AM5; _clanmessage = "Welcome"; _side = createGroup west;};
-if ((getPlayerUID player) in A6) then {_model = AM6; _clanmessage = "Welcome"; _side = createGroup west;};
-if ((getPlayerUID player) in A7) then {_model = AM7; _clanmessage = "Welcome"; _side = createGroup west;};
-if ((getPlayerUID player) in A8) then {_model = AM8; _clanmessage = "Welcome"; _side = createGroup west;};
-if ((getPlayerUID player) in A9) then {_model = AM9; _clanmessage = "Welcome"; _side = createGroup west;};
-if ((getPlayerUID player) in A10) then {_model = AM10; _clanmessage = "Welcome"; _side = createGroup west;};
+if ((getPlayerUID player) in A1) then {_model = AM1; _clanmessage = "I made you my bitch!";};
+if ((getPlayerUID player) in A2) then {_model = AM2; _clanmessage = "Whats up nigga";};
+if ((getPlayerUID player) in A3) then {_model = AM3; _clanmessage = "Welcome";};
+if ((getPlayerUID player) in A4) then {_model = AM4; _clanmessage = "Welcome";};
+if ((getPlayerUID player) in A5) then {_model = AM5; _clanmessage = "Welcome";};
+if ((getPlayerUID player) in A6) then {_model = AM6; _clanmessage = "Welcome";};
+if ((getPlayerUID player) in A7) then {_model = AM7; _clanmessage = "Welcome";};
+if ((getPlayerUID player) in A8) then {_model = AM8; _clanmessage = "Welcome";};
+if ((getPlayerUID player) in A9) then {_model = AM9; _clanmessage = "Welcome";};
+if ((getPlayerUID player) in A10) then {_model = AM10; _clanmessage = "Welcome";};
 /* Clan Members */
-if ((getPlayerUID player) in CL1) then {_model = CM1; _clanmessage = CN1; _side = createGroup west;};
-if ((getPlayerUID player) in CL2) then {_model = CM2; _clanmessage = CN2; _side = createGroup west;};
-if ((getPlayerUID player) in CL3) then {_model = CM3; _clanmessage = CN3; _side = createGroup west;};
-if ((getPlayerUID player) in CL4) then {_model = CM4; _clanmessage = CN4; _side = createGroup west;};
-if ((getPlayerUID player) in CL5) then {_model = CM5; _clanmessage = CN5; _side = createGroup west;};
-if ((getPlayerUID player) in CL6) then {_model = CM6; _clanmessage = CN6; _side = createGroup west;};
-if ((getPlayerUID player) in CL7) then {_model = CM7; _clanmessage = CN7; _side = createGroup west;};
-if ((getPlayerUID player) in CL8) then {_model = CM8; _clanmessage = CN8; _side = createGroup west;};
-if ((getPlayerUID player) in CL9) then {_model = CM9; _clanmessage = CN9; _side = createGroup west;};
-if ((getPlayerUID player) in CL10) then {_model = CM10; _clanmessage = CN10; _side = createGroup west;};
+if ((getPlayerUID player) in CL1) then {_model = CM1; _clanmessage = CN1;};
+if ((getPlayerUID player) in CL2) then {_model = CM2; _clanmessage = CN2;};
+if ((getPlayerUID player) in CL3) then {_model = CM3; _clanmessage = CN3;};
+if ((getPlayerUID player) in CL4) then {_model = CM4; _clanmessage = CN4;};
+if ((getPlayerUID player) in CL5) then {_model = CM5; _clanmessage = CN5;};
+if ((getPlayerUID player) in CL6) then {_model = CM6; _clanmessage = CN6;};
+if ((getPlayerUID player) in CL7) then {_model = CM7; _clanmessage = CN7;};
+if ((getPlayerUID player) in CL8) then {_model = CM8; _clanmessage = CN8;};
+if ((getPlayerUID player) in CL9) then {_model = CM9; _clanmessage = CN9;};
+if ((getPlayerUID player) in CL10) then {_model = CM10; _clanmessage = CN10;};
 /* Clan Commanders */
-if ((getPlayerUID player) in CCL1) then {_model = CCM1; _clanmessage = CN1; _side = createGroup west;};
-if ((getPlayerUID player) in CCL2) then {_model = CCM2; _clanmessage = CN2; _side = createGroup west;};
-if ((getPlayerUID player) in CCL3) then {_model = CCM3; _clanmessage = CN3; _side = createGroup west;};
-if ((getPlayerUID player) in CCL4) then {_model = CCM4; _clanmessage = CN4; _side = createGroup west;};
-if ((getPlayerUID player) in CCL5) then {_model = CCM5; _clanmessage = CN5; _side = createGroup west;};
-if ((getPlayerUID player) in CCL6) then {_model = CCM6; _clanmessage = CN6; _side = createGroup west;};
-if ((getPlayerUID player) in CCL7) then {_model = CCM7; _clanmessage = CN7; _side = createGroup west;};
-if ((getPlayerUID player) in CCL8) then {_model = CCM8; _clanmessage = CN8; _side = createGroup west;};
-if ((getPlayerUID player) in CCL9) then {_model = CCM9; _clanmessage = CN9; _side = createGroup west;};
-if ((getPlayerUID player) in CCL10) then {_model = CCM10; _clanmessage = CN10; _side = createGroup west;};
+if ((getPlayerUID player) in CCL1) then {_model = CCM1; _clanmessage = CN1;};
+if ((getPlayerUID player) in CCL2) then {_model = CCM2; _clanmessage = CN2;};
+if ((getPlayerUID player) in CCL3) then {_model = CCM3; _clanmessage = CN3;};
+if ((getPlayerUID player) in CCL4) then {_model = CCM4; _clanmessage = CN4;};
+if ((getPlayerUID player) in CCL5) then {_model = CCM5; _clanmessage = CN5;};
+if ((getPlayerUID player) in CCL6) then {_model = CCM6; _clanmessage = CN6;};
+if ((getPlayerUID player) in CCL7) then {_model = CCM7; _clanmessage = CN7;};
+if ((getPlayerUID player) in CCL8) then {_model = CCM8; _clanmessage = CN8;};
+if ((getPlayerUID player) in CCL9) then {_model = CCM9; _clanmessage = CN9;};
+if ((getPlayerUID player) in CCL10) then {_model = CCM10; _clanmessage = CN10;};
 
 /* Skin Change */
+if (isNil "_model") exitWith {systemChat "<Clan Skin>: You dont have a clan skin!"; titleText ["<Clan Skin>: У вас нет кланового скина!", "PLAIN DOWN", 3]};
 	sleep 0.1;
 	[dayz_playerUID,dayz_characterID,_model] spawn player_humanityMorph;
 	waitUntil {typeOf player == _model};
+	 _side = createGroup west;
+	 sleep 0.1;
 	[player] joinSilent _side;
-	systemChat format["%1", _clanmessage];
+	systemChat format["<Clan Skin>: %1", _clanmessage];
