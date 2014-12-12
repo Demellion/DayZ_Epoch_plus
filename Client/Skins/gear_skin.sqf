@@ -1,9 +1,12 @@
-private ["_model","_clanmessage","_side"];
+private ["_model","_clanmessage","_side","_cnt"];
 // Skin change script by DT Demellion.
 // Clans Skins, UIDs and names here
 // IMPORTANT: DO NOT put epoch functionary skins like traders skins
 // as this will result in a bugs and Anti-Hack bans for players.
 //serverTraders = ["CZ_Special_Forces_TL_DES_EP1","RU_Citizen3","Rocker4","Profiteer4","Rita_Ensler_EP1","CIV_EuroMan01_EP1","CIV_EuroMan02_EP1","TK_GUE_Soldier_5_EP1","MVD_Soldier_GL","Worker2","Worker3","Woodlander1","UN_CDF_Soldier_Pilot_EP1","RU_WorkWoman1","Dr_Annie_Baker_EP1","RU_Citizen4","RU_WorkWoman5","RU_Citizen1","RU_Villager3","TK_CIV_Takistani04_EP1","Pilot_EP1","RU_Profiteer4","Woodlander3","Dr_Hladik_EP1","Doctor","HouseWife1","GUE_Woodlander2","US_Soldier_EP1","US_Delta_Force_EP1","TK_Aziz_EP1","CZ_Soldier_AT_DES_EP1","RU_Hooker4","RU_Hooker3"];
+_model = nil;
+_cnt = {isPlayer _x && _x != player} count (player nearEntities [['Man','LandVehicle','Air'], 10]);
+if (_cnt > 0) exitWith { titleText ["<Skin>: Вы слишком близко к игроку/зомби/технике!", "PLAIN DOWN", 3]; systemchat "<Skin>: Too close to a player/zombie/vehicle!";};
 
 /* Admin Skins */
 A1 = ["76561198063078194"];  //demellion
