@@ -10,11 +10,11 @@ fnc_gamble = {
 		_awardAmount = _this select 2;
 		player removeAction player_gamble_emerald;
 		player removeAction player_gamble_ruby;
-        player removeAction player_gamble_amethyst;
-        player removeAction player_gamble_sapphire;
-        player removeAction player_gamble_obsidian;
-        player removeAction player_gamble_topaz;
-        player removeAction player_gamble_citrine;
+        	player removeAction player_gamble_amethyst;
+        	player removeAction player_gamble_sapphire;
+        	player removeAction player_gamble_obsidian;
+        	player removeAction player_gamble_topaz;
+        	player removeAction player_gamble_citrine;
 		
 		disableuserinput true; disableuserinput true; disableuserinput true;
 		player removeMagazine _removedGem;
@@ -26,7 +26,7 @@ fnc_gamble = {
 		player switchMove "";
 		player playActionNow "stop";		
 		disableuserinput false; disableuserinput false; disableuserinput false;
-		cutText format ["<Лотерея>: Вы разыграли %1 на %2x %3",_removedGem,_awardAmount,_awardItem];
+		cutText [format ["<Лотерея>: Вы разыграли %1 на %2x %3",_removedGem,_awardAmount,_awardItem],"PLAIN DOWN",1];
 		systemChat format ["<Gamble>: You gambled %1 for %2x %3",_removedGem,_awardAmount,_awardItem];
 		if (_awardItem == "IRStrobe") then {
 			customRemoteMessage = ['globalChat', "выиграл в лотерею ИК-Метку", player];
