@@ -1,14 +1,13 @@
-private ["_gemtype","_state","_removedGem","_awardItem","_awardAmount","_awardArray"];
+private ["_gemtype","_state","_removedGem","_awardItem","_awardAmount","_awardArray","_var1","_var2","_var3"];
 	_gemtype = 	(_this select 3) select 0;
-	_state = 	(_this select 3) select 1;
-if (_state < 1) exitWith {cutText ["<Рулетка>: Вы должны связатся с торговцем камней!", "PLAIN DOWN"]; systemChat "<Gamble>: You must contact a gems trader!";};
-if (isNil "_gemtype") exitWith {systemChat "<Gamble>: Error - no gem"};
-
+	_state =           (_this select 3) select 1;
+    if (_state < 1) exitWith {cutText ["<Лотерея>: Вы должны связатся с торговцем камней!", "PLAIN DOWN"];systemChat "<Gamble>: You must contact a gems trader!";};
+    if (isNil "_gemtype") exitWith {};
+ 
 fnc_gamble = {
         _removedGem = _this select 0;
 		_awardItem = _this select 1;
 		_awardAmount = _this select 2;
-		r_interrupt = false;
 		player removeAction player_gamble_emerald;
 		player removeAction player_gamble_ruby;
         player removeAction player_gamble_amethyst;
@@ -29,14 +28,14 @@ fnc_gamble = {
 		disableuserinput false; disableuserinput false; disableuserinput false;
 		cutText format ["<Лотерея>: Вы разыграли %1 на %2x %3",_removedGem,_awardAmount,_awardItem];
 		systemChat format ["<Gamble>: You gambled %1 for %2x %3",_removedGem,_awardAmount,_awardItem];
-		if (_awardItem in "IRStrobe") then {
+		if (_awardItem == "IRStrobe") then {
 			customRemoteMessage = ['globalChat', "выиграл в лотерею ИК-Метку", player];
             publicVariable "customRemoteMessage";
 		};
-	};
+	}; 
 
-if (_gemtype in "ItemEmerald") then {
-	private ["_var1","_var2","_var3"];
+if (_gemtype == "ItemEmerald") then {
+
 	_awardArray = [
 		["IRStrobe",1],
 		["Laserbatteries",8],
@@ -57,13 +56,13 @@ if (_gemtype in "ItemEmerald") then {
 	] call BIS_fnc_selectRandom;
 	sleep 0.1;
 	_var1 = _gemtype;
-	_var2 = (_awardArray select 0) select 0;
-	_var3 = (_awardArray select 0) select 1;
+	_var2 = _awardArray  select 0;
+	_var3 = _awardArray  select 1;
 	[_var1,_var2,_var3] call fnc_gamble;
 };
 
-if (_gemtype in "ItemRuby") then {
-	private ["_var1","_var2","_var3"];
+if (_gemtype == "ItemRuby") then {
+
 	_awardArray = [
 		["Laserbatteries",4],
 		["Laserbatteries",3],
@@ -81,12 +80,12 @@ if (_gemtype in "ItemRuby") then {
 	] call BIS_fnc_selectRandom;
 	sleep 0.1;
 	_var1 = _gemtype;
-	_var2 = (_awardArray select 0) select 0;
-	_var3 = (_awardArray select 0) select 1;
-	[_var1,_var2,_var3] call fnc_gamble;	
+	_var2 = _awardArray  select 0;
+	_var3 = _awardArray  select 1;
+	[_var1,_var2,_var3] call fnc_gamble;
 };
-if (_gemtype in "ItemAmethyst") then {
-	private ["_var1","_var2","_var3"];
+if (_gemtype == "ItemAmethyst") then {
+
 	_awardArray = [
 		["Laserbatteries",2],
 		["Laserbatteries",1],
@@ -104,12 +103,12 @@ if (_gemtype in "ItemAmethyst") then {
 	] call BIS_fnc_selectRandom;
 	sleep 0.1;
 	_var1 = _gemtype;
-	_var2 = (_awardArray select 0) select 0;
-	_var3 = (_awardArray select 0) select 1;
-	[_var1,_var2,_var3] call fnc_gamble;		
+	_var2 = _awardArray  select 0;
+	_var3 = _awardArray  select 1;
+	[_var1,_var2,_var3] call fnc_gamble;
 };
-if (_gemtype in "ItemSapphire") then {
-	private ["_var1","_var2","_var3"];
+if (_gemtype == "ItemSapphire") then {
+
 	_awardArray = [
 		["Laserbatteries",2],
 		["Laserbatteries",1],
@@ -130,12 +129,12 @@ if (_gemtype in "ItemSapphire") then {
 	] call BIS_fnc_selectRandom;
 	sleep 0.1;
 	_var1 = _gemtype;
-	_var2 = (_awardArray select 0) select 0;
-	_var3 = (_awardArray select 0) select 1;
-	[_var1,_var2,_var3] call fnc_gamble;		
+	_var2 = _awardArray  select 0;
+	_var3 = _awardArray  select 1;
+	[_var1,_var2,_var3] call fnc_gamble;
 };
-if (_gemtype in "ItemObsidian") then {
-	private ["_var1","_var2","_var3"];
+if (_gemtype == "ItemObsidian") then {
+
 	_awardArray = [
 		["ItemSapphire",1],
 		["ItemBriefcase100oz",1],
@@ -154,12 +153,12 @@ if (_gemtype in "ItemObsidian") then {
 	] call BIS_fnc_selectRandom;
 	sleep 0.1;
 	_var1 = _gemtype;
-	_var2 = (_awardArray select 0) select 0;
-	_var3 = (_awardArray select 0) select 1;
-	[_var1,_var2,_var3] call fnc_gamble;		
+	_var2 = _awardArray  select 0;
+	_var3 = _awardArray  select 1;
+	[_var1,_var2,_var3] call fnc_gamble;	
 };
-if (_gemtype in "ItemTopaz") then {
-	private ["_var1","_var2","_var3"];
+if (_gemtype == "ItemTopaz") then {
+
 	_awardArray = [
 		["ItemObsidian",1],
 		["ItemBriefcase50oz",1],
@@ -173,12 +172,12 @@ if (_gemtype in "ItemTopaz") then {
 	] call BIS_fnc_selectRandom;
 	sleep 0.1;
 	_var1 = _gemtype;
-	_var2 = (_awardArray select 0) select 0;
-	_var3 = (_awardArray select 0) select 1;
-	[_var1,_var2,_var3] call fnc_gamble;		
+	_var2 = _awardArray  select 0;
+	_var3 = _awardArray  select 1;
+	[_var1,_var2,_var3] call fnc_gamble;
 };
-if (_gemtype in "ItemCitrine") then {
-	private ["_var1","_var2","_var3"];
+if (_gemtype == "ItemCitrine") then {
+
 	_awardArray = [
 		["ItemTopaz",1],
 		["ItemBriefcase50oz",1],
@@ -192,12 +191,12 @@ if (_gemtype in "ItemCitrine") then {
 	] call BIS_fnc_selectRandom;
 	sleep 0.1;
 	_var1 = _gemtype;
-	_var2 = (_awardArray select 0) select 0;
-	_var3 = (_awardArray select 0) select 1;
-	[_var1,_var2,_var3] call fnc_gamble;		
+	_var2 = _awardArray  select 0;
+	_var3 = _awardArray  select 1;
+	[_var1,_var2,_var3] call fnc_gamble;
 };
 
-
+ 
 
 
 
