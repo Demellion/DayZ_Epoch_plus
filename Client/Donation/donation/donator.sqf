@@ -23,11 +23,11 @@ fnc_donate = {
         	player removeAction player_donate_s;
         	
 		disableuserinput true; disableuserinput true; disableuserinput true;
-		player playActionNow "Medic";
-		sleep 6;
-        	for "_x" from 1 to _fnc_count do {
+		for "_x" from 1 to _fnc_count do {
 			player removeMagazine _fnc_item;
         	};
+		player playActionNow "Medic";
+		sleep 6;
         	[player,_fnc_hadd] call player_humanityChange;
 		player switchMove "";
 		player playActionNow "stop";		
