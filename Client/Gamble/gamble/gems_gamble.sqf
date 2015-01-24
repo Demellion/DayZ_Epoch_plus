@@ -1,8 +1,10 @@
-private ["_gemtype","_state","_removedGem","_awardItem","_awardAmount","_awardArray","_var1","_var2","_var3"];
+private ["_animstate","_gemtype","_state","_removedGem","_awardItem","_awardAmount","_awardArray","_var1","_var2","_var3"];
 	_gemtype = 	(_this select 3) select 0;
 	_state =           (_this select 3) select 1;
-    if (_state < 1) exitWith {cutText ["<Лотерея>: Вы должны связатся с торговцем камней!", "PLAIN DOWN"];systemChat "<Gamble>: You must contact a gems trader!";};
-    if (isNil "_gemtype") exitWith {};
+	_animstate = animationState player;
+    	if (_state < 1) exitWith {cutText ["<Лотерея>: Вы должны связатся с торговцем камней!", "PLAIN DOWN"];systemChat "<Gamble>: You must contact a gems trader!";};
+	if (isNil "_gemtype") exitWith {};
+	if (_animstate in "Medic") exitWith {};
  
 fnc_gamble = {
         _removedGem = _this select 0;
