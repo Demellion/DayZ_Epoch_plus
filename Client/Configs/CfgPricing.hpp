@@ -33,8 +33,8 @@ class CfgPricing
 	class PartOre {price = 25;}; 
 	class ItemGoldBar {price = 100;};
 	class ItemGoldBar10oz {price = 1000;};
-	class ItemQuartz {price = 50;};
-	class ItemGarnet {price = 100;};
+	class ItemQuartz {price = 100;};
+	class ItemGarnet {price = 200;};
 	class ItemCitrine {price = 500;};
 	class ItemAmethyst {price = 1000;};
 	class ItemTopaz {price = 2000;};
@@ -57,14 +57,14 @@ class CfgPricing
 	class MeleeMaul { price = 10;};
 	class WoodClub { price = 5;};
     // Pistols
-	class hgun_ACPC2_F {price = 50;};
-	class hgun_Rook40_F {price = 50;};
-	class hgun_P07_F {price = 50;};
-	class hgun_Pistol_heavy_01_F {price = 70;};
-	class hgun_Pistol_heavy_02_F {price = 100;};
-	class ruger_pistol_epoch {price = 40;};
-	class 1911_pistol_epoch {price = 60;};
-	class hgun_Pistol_Signal_F {price = 40;};
+	class hgun_ACPC2_F {price = 50; tax = 1.5;};
+	class hgun_Rook40_F {price = 50; tax = 1.5;};
+	class hgun_P07_F {price = 50; tax = 1.5;};
+	class hgun_Pistol_heavy_01_F {price = 70; tax = 1.5;};
+	class hgun_Pistol_heavy_02_F {price = 100; tax = 1.5;};
+	class ruger_pistol_epoch {price = 40; tax = 1.5;};
+	class 1911_pistol_epoch {price = 60; tax = 1.5;};
+	class hgun_Pistol_Signal_F {price = 40; tax = 1.5;};
     //Trash
 	class sr25_epoch { price = 200; tax = 0.5;};
 	class l85a2_epoch { price = 250;  tax = 0.5; }; 
@@ -104,23 +104,23 @@ class CfgPricing
 	class M14Grn_EPOCH {price = 550; tax = 0.5;};
 	
 	//High
-	class srifle_DMR_01_F {price = 750;  tax = 2.5;}; // Rahim 7.62 [Black]
-	class srifle_EBR_F {price = 750; tax = 2.5;}; //  MK18 ABR 7.62 [Black]
-	class srifle_GM6_F {price = 1500; tax = 2.5;}; // GM6 Lynx 12.7 [Black]
-	class srifle_LRR_F {price = 1000; tax =2.5;}; // LRR M320 .408 [Black]
-	class MMG_01_hex_F { price = 850;  tax = 2.5;}; // Navid 9.3 [Camo]
-	class MMG_01_tan_F { price = 850;  tax = 2.5; }; // Navid 9.3 [Desert]
-	class MMG_02_camo_F { price = 750;  tax = 2.5; }; // SPMG .338 [Camo]
-	class MMG_02_black_F { price = 750;  tax = 2.5; }; // SPMG .338 [Black]
-	class MMG_02_sand_F { price = 750;  tax = 2.5; }; // SPMG .338 [Desert]
-	class LMG_Mk200_F {price = 850;  tax = 2.5;}; // Mk200 6.5 [Black]
-	class arifle_MX_SW_F {price = 750;  tax = 2.5;}; // MX SW F 6.5  [Black]
-	class LMG_Zafir_F {price = 750;  tax = 2.5;}; // Zafir 7.62
-	class arifle_MX_SW_Black_F {price = 750;  tax = 2.5;}; // MX SW 6.5
-	class m249_EPOCH {price = 800;  tax = 2.5;}; // [Black]
-	class m249Tan_EPOCH {price = 800;  tax = 2.5;}; // [Desert]
-	class m107Tan_EPOCH {price = 1250;  tax = 2.5;}; // [Desert]
-	class m107_EPOCH {price = 1250;  tax = 2.5;}; // [Black]
+	class srifle_DMR_01_F {price = 1750;  tax = 2.5;}; // Rahim 7.62 [Black]
+	class srifle_EBR_F {price = 1750; tax = 2.5;}; //  MK18 ABR 7.62 [Black]
+	class srifle_GM6_F {price = 2500; tax = 2.5;}; // GM6 Lynx 12.7 [Black]
+	class srifle_LRR_F {price = 2000; tax =2.5;}; // LRR M320 .408 [Black]
+	class MMG_01_hex_F { price = 1500;  tax = 2.5;}; // Navid 9.3 [Camo]
+	class MMG_01_tan_F { price = 1500;  tax = 2.5; }; // Navid 9.3 [Desert]
+	class MMG_02_camo_F { price = 1750;  tax = 2.5; }; // SPMG .338 [Camo]
+	class MMG_02_black_F { price = 1750;  tax = 2.5; }; // SPMG .338 [Black]
+	class MMG_02_sand_F { price = 1750;  tax = 2.5; }; // SPMG .338 [Desert]
+	class LMG_Mk200_F {price = 1850;  tax = 2.5;}; // Mk200 6.5 [Black]
+	class arifle_MX_SW_F {price = 1750;  tax = 2.5;}; // MX SW F 6.5  [Black]
+	class LMG_Zafir_F {price = 1750;  tax = 2.5;}; // Zafir 7.62
+	class arifle_MX_SW_Black_F {price = 1750;  tax = 2.5;}; // MX SW 6.5
+	class m249_EPOCH {price = 1200;  tax = 2.5;}; // [Black]
+	class m249Tan_EPOCH {price = 1200;  tax = 2.5;}; // [Desert]
+	class m107Tan_EPOCH {price = 1750;  tax = 2.5;}; // [Desert]
+	class m107_EPOCH {price = 1750;  tax = 2.5;}; // [Black]
 	
 	// Marksman (DLC Weapons) (02 - FNFAL, 05 - ASVAL)
 	class srifle_DMR_02_F { price = 750; tax= 0.5;}; // Mar-10 .338 [Black]
@@ -243,7 +243,9 @@ class CfgPricing
 	class ItemWatch {price = 20;};
 	class Binocular {price = 25;};
 	class NVG_EPOCH {price = 150; tax = 2.5;};
-    class Rangefinder {price = 500;};  
+	class Rangefinder {price = 500;}; 
+	class Toolkit {price = 4000; tax = 0.5;};
+	class Medikit {price = 2000; tax = 0.5;};  
 	
 /*                         Building                           */
     // Vaults
@@ -279,14 +281,14 @@ class CfgPricing
 
 	
 /*                        Materials                          */
-    class acc_pointer_IR {price = 250; tax = 2.5;};
+	class acc_pointer_IR {price = 250; tax = 2.5;};
 	class EnergyPack {price = 150; tax = 0.5;};
 	class EnergyPackLg {price = 450; tax = 0.5;};
 	class CircuitParts {price = 100; tax = 0.5;};
 	class ItemKiloHemp {price = 100;};
 	class VehicleRepair {price = 65; tax = 0.5;};
 	class VehicleRepairLg {price = 125; tax = 0.5;};
-	class ItemDocument {price = 150; tax = 2.5;};
+	class ItemDocument {price = 150; tax = 5.5;};
 	class ItemMixOil {price = 50; tax = 0.5;};
 	class emptyjar_epoch {price = 25; tax = 0.5;};
 	class jerrycan_epoch { price = 10; tax = 0.5;};
@@ -336,7 +338,7 @@ class CfgPricing
 	class CookedGoat_EPOCH {price = 100; tax= 0.5;};
 	class SnakeMeat_EPOCH {price = 200; tax= 0.5;};
 	class CookedRabbit_EPOCH {price = 125; tax= 0.5;};
-	class CookedChicken_EPOCH {price = 100; tax= 0.5;};
+	class CookedChicken_EPOCH {price = 25; tax= 3.5;};
 	class ItemTrout {price = 100; tax= 0.5;};
 	class ItemSeaBass {price = 125; tax= 0.5;};
 	class ItemTuna {price = 150; tax= 0.5;};
@@ -351,7 +353,7 @@ class CfgPricing
 	
 /*                       Backpacks                       */
 	// Default
-    //BAGS 1 
+  //BAGS 1 
 	class smallbackpack_red_epoch {price = 25; tax = 0.5;};
 	class smallbackpack_green_epoch {price = 25; tax = 0.5;};
 	class smallbackpack_teal_epoch {price = 25; tax = 0.5;};
@@ -383,7 +385,7 @@ class CfgPricing
 	class B_FieldPack_oli {price = 80; tax = 0.5;};
 	class B_FieldPack_oucamo {price = 80; tax = 0.5;};
 	//BAGS 6 //
-    class B_Carryall_cbr {price = 300; tax = 0.5;};
+  class B_Carryall_cbr {price = 300; tax = 0.5;};
 	class B_Carryall_khk {price = 300; tax = 0.5;};
 	class B_Carryall_mcamo {price = 300; tax = 0.5;};
 	class B_Carryall_ocamo {price = 300; tax = 0.5;};
@@ -392,9 +394,9 @@ class CfgPricing
 
 /*                     Weapon Mods                    */
     // Epoch
-	class Heal_EPOCH {price = 300;};
-	class Defib_EPOCH {price = 500;};
-	class Repair_EPOCH {price = 200;};
+	class Heal_EPOCH {price = 1000;};
+	class Defib_EPOCH {price = 2000; tax = 0.5;};
+	class Repair_EPOCH {price = 4000; tax = 0.5;};
 	// Optics
 	class optic_Arco {price = 150; tax = 2.5;}; // 2x HOLO Collimator (Green Dot)
 	class optic_Hamr {price = 150; tax = 2.5;}; // 2x HOLO Collimator (Red Dot)
@@ -406,12 +408,12 @@ class CfgPricing
 	class optic_Holosight_smg {price = 100; tax = 2.5;}; // 2x Advanced HOLO Collimator (SMG Red Graph)
 	class optic_SOS {price = 500; tax = 2.5;}; //10x-85x Sniper Optics (Mildots Analogue)
 	class optic_MRCO {price = 300; tax = 2.5;}; // 2x Ballistic Sniper Optics (200-800 Range Dots)
-	class optic_DMS {price = 400; tax = 2.5;}; // 4x Ballistic Marksman Optics (Optical Rangefinder)
+	class optic_DMS {price = 1000; tax = 2.5;}; // 4x Ballistic Marksman Optics (Optical Rangefinder)
 	class optic_Yorris {price = 25; tax = 2.5;}; // 2x Zubr Optics ()
 	class optic_MRD {price = 25; tax = 2.5;};  // 2x 4-Five Optics ()
-	class optic_LRPS {price = 500; tax = 2.5;}; // 6x-25x Long Range Precision Scope (Mildots)
-	class optic_NVS {price = 700; tax = 2.5;}; // 5x NVS Scope 
-	class optic_Nightstalker {price = 1000; tax = 2.5;}; // 4x-10x Nightvision Mode Optics (Simple Sight)
+	class optic_LRPS {price = 1250; tax = 2.5;}; // 6x-25x Long Range Precision Scope (Mildots)
+	class optic_NVS {price = 1000; tax = 2.5;}; // 5x NVS Scope 
+	class optic_Nightstalker {price = 1500; tax = 2.5;}; // 4x-10x Nightvision Mode Optics (Simple Sight)
 	// DLC Optics
 	class optic_AMS { price = 250; tax = 2.5; } // 3x-10x Advanced Marksman Scope (Wildcard Ballistics Marks) [Black]
 	class optic_AMS_khk { price = 250; tax = 2.5; }; // 3x-10x Advanced Marksman Scope (Wildcard Ballistics Marks) [Khaki]
@@ -423,25 +425,26 @@ class CfgPricing
 	// DLC bipods
 	class bipod_01_F_snd { price = 100; tax = 2.5; }; // Bipod [Desert]
 	class bipod_01_F_blk { price = 100; tax = 2.5; }; // Bipod [Black]
-	class bipod_01_F_mtp { price = 100; tax = 2.5; }; // // Bipod []
+	class bipod_01_F_mtp { price = 100; tax = 2.5; }; // Bipod []
 	class bipod_02_F_blk { price = 100; tax = 2.5; }; // Bipod [Black]
 	class bipod_02_F_tan { price = 100; tax = 2.5; }; // Bipod [Desert]
 	class bipod_02_F_hex { price = 100; tax = 2.5; }; // Bipod [Hex]
 	class bipod_03_F_blk { price = 100; tax = 2.5; }; // Bipod [Black]
 	class bipod_03_F_oli { price = 100; tax = 2.5; }; // Bipod [Olive]
     // Silencers
-	class muzzle_snds_H {price = 100;};
-	class muzzle_snds_L {price = 100;};
-	class muzzle_snds_M {price = 100;};
-	class muzzle_snds_B {price = 100;};
-	class muzzle_snds_H_MG {price = 100;};
-	class muzzle_snds_acp {price = 100;};
-	class muzzle_snds_338_black {price = 100;};
-	class muzzle_snds_338_green {price = 100;};
-	class muzzle_snds_338_sand {price = 100;};
-	class muzzle_snds_93mmg {price = 100;};
-	class muzzle_snds_93mmg_tan {price = 100;};
-	class muzzle_sr25S_epoch {price = 100;};
+	class muzzle_snds_H {price = 100; tax = 2.5; }; // 6.5
+	class muzzle_snds_L {price = 100; tax = 2.5; }; // 9mm
+	class muzzle_snds_M {price = 100; tax = 2.5; }; // 5.56
+	class muzzle_snds_B {price = 100; tax = 2.5; }; // 7.62
+	class muzzle_snds_H_MG {price = 100; tax = 2.5; }; // 6.5 MG
+	class muzzle_snds_H_SW {price = 100; tax = 2.5; }; // 6.5 SW
+	class muzzle_snds_acp {price = 100;}; // .45
+	class muzzle_snds_338_black {price = 100; tax = 2.5; }; // .338
+	class muzzle_snds_338_green {price = 100; tax = 2.5; }; // .338
+	class muzzle_snds_338_sand {price = 100; tax = 2.5; }; // .338
+	class muzzle_snds_93mmg {price = 100; tax = 2.5; };
+	class muzzle_snds_93mmg_tan {price = 100; tax = 2.5; };
+	class muzzle_sr25S_epoch {price = 100; tax = 2.5;};
 	// Other
     class acc_flashlight {price = 25;};
 	class Elcan_epoch { price = 150; tax = 2.5;};
@@ -450,9 +453,9 @@ class CfgPricing
 
 /*                          Gear                              */
 	// Epoch Special
-	class wolf_mask_epoch {price = 3000; tax = 5.5;};
-	class pkin_mask_epoch {price = 3000; tax = 5.5;};
-	class clown_mask_epoch {price = 5000; tax = 5.5;};
+	class wolf_mask_epoch {price = 2000; tax = 5.5;};
+	class pkin_mask_epoch {price = 2000; tax = 5.5;};
+	class clown_mask_epoch {price = 2000; tax = 5.5;};
     // Uniforms
 	class U_O_FullGhillie_lsh { price = 150; };
 	class U_O_FullGhillie_sard { price = 150; };
@@ -485,9 +488,9 @@ class CfgPricing
 	class U_Wetsuit_Purp {price = 50;};
 	class U_Wetsuit_Camo {price = 50;};
 	class U_Camo_uniform {price = 50;};
-	class U_ghillie1_uniform {price = 50;};
-	class U_ghillie2_uniform {price = 50;};
-	class U_ghillie3_uniform {price = 50;};
+	class U_ghillie1_uniform {price = 150;};
+	class U_ghillie2_uniform {price = 150;};
+	class U_ghillie3_uniform {price = 150;};
 	class U_CamoBlue_uniform {price = 50;};
 	class U_CamoBrn_uniform {price = 50;};
 	class U_CamoRed_uniform {price = 50;};
@@ -675,10 +678,12 @@ class CfgPricing
 	class G_Sport_Red {price = 20;};
 	class G_Tactical_Black {price = 15;};
 /*                          Vehicle                           */
+    // Donate Vehicle
+  //class B_Quadbike_01_F {price = 1;};
     // Armed
-   	class B_MRAP_01_HMG_F  {price = 6000; tax = 3.5;}; // Hunter HMG
+  class B_MRAP_01_HMG_F  {price = 6000; tax = 3.5;}; // Hunter HMG
 	class B_MRAP_01_gmg_F  {price = 6000; tax = 3.5;}; // Hunter GMG
-    class I_MRAP_03_gmg_F {price = 6500; tax = 3.5;}; // Strider GMG
+  class I_MRAP_03_gmg_F {price = 6500; tax = 3.5;}; // Strider GMG
 	class I_MRAP_03_hmg_F {price = 7000; tax = 3.5;}; // Strider HMG
 	class B_G_Offroad_01_armed_EPOCH {price = 4000; tax = 3.5;}; // Armed Offroad	
 	class I_Boat_Armed_01_minigun_F {price = 4000; tax = 3.5;};// M134 Boat
