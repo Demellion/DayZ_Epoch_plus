@@ -1,0 +1,14 @@
+//!script
+
+// Load
+7 addItem !"_self addItemToBackPack"
+7 addBackPack !"_self addBackPack"
+7 forceAddUniform !"_self forceAddUniform"
+
+// infiSTAR fix
+7 addMagazineCargo !"_object addmagazinecargoglobal _x"
+7 addItem !"_object additemtouniform _x"
+7 addBackPack !"_object addbackpack _backpack"
+7 removeAllWeapons !"removeallweapons _object"
+7 removeAllItems !"removeallitems _object"
+7 forceAddUniform !"_object forceadduniform _uniform"
