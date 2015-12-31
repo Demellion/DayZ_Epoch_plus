@@ -12,3 +12,7 @@
 7 removeAllWeapons !"removeallweapons _object"
 7 removeAllItems !"removeallitems _object"
 7 forceAddUniform !"_object forceadduniform _uniform"
+
+// Specific
+7 allowDamage !"_allowdamage = objNull allowdamage false;"
+7 setDamage !"_set = objNull setDamage 0;"
