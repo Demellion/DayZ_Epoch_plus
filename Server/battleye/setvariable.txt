@@ -1,1 +1,1 @@
-5 "" !"halv_defaulttex"
+5 "" !"don_passengers" !"halv_podowner" !"halvwtd" !"halv_defaulttex" !="(_|)don_player_veh setVariable" !="don_ownerity_code" !="don_crew"
