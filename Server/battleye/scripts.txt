@@ -4,6 +4,7 @@
 7 addItem !"_self addItemToBackPack"
 7 addBackPack !"_self addBackPack"
 7 forceAddUniform !"_self forceAddUniform"
+7 createVehicleLocal !"_obj = createVehicleLocal [(_dat select 0), call compile"
 
 // infiSTAR fix
 7 addMagazineCargo !"_object addmagazinecargoglobal _x"
