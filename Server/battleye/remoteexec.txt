@@ -1,1 +1,1 @@
-5 "" !"call BIS_fnc_showNotification;"
+5 "" !"bis_fnc_call {[format["%1 (%2) BANNED, REASON - [SAFE/LOCKBOX HACK]",hackeruid,hackername],0,0.7,10,2] spawn bis_fnc_dynamictext}" !"call BIS_fnc_showNotification;"
