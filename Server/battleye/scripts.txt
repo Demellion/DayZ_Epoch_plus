@@ -18,4 +18,4 @@
 7 allowDamage !"_allow = objNull allowdamage false;"
 7 setDamage !"_set = objNull setDamage 0;"
 7 attachTo "_attach = objNull attachTo player;"
-7 callExtension !"ARMA_LOG" callExtension format ["SAFEHACK_LOG:%1",_this]"
+
