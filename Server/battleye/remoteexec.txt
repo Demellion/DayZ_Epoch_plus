@@ -1,1 +1,1 @@
-5 "" !"remoteExecCall ["bis_fnc_call", 0]" !"call BIS_fnc_showNotification;"
+5 "" !"call BIS_fnc_showNotification;"
