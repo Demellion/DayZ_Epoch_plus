@@ -1,3 +1,4 @@
+// Author: Demellion (Dismal Team) for Epoch Mod
 if !(hasInterface) then {
     "ASH" addPublicVariableEventHandler {_this select 1 call fn_access_block};
 fn_access_block = {
