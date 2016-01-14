@@ -26,6 +26,7 @@ fn_access_block = {
 	// Default LOG
 	if (_argument == 2) then {
 	// any log functions
+	sleep 30;
 	};	
 	systemChat format["ACCESS VIOLATION: object: %1, locked: %2, distance: %3 nearest objects:%4",_obj,_lock,_distance,_obj2]; //DEBUG only
 };
