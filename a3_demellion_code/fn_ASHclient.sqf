@@ -12,10 +12,10 @@ while {true} do {
 				_hackername = (name (vehicle player));
 				_playerpos = (position player);
 				(findDisplay 602) closeDisplay 0;
-				HackingSafe = "";
 				ASH = [0,_hackeruid,_hackername,_playerpos];
 				publicVariableServer "ASH";
-				publicVariable HackingSafe;
+				sleep 0.1;
+				[] execVM "compile\fn_clientKick.sqf";
 			};
 			if (!_lock) then {
 			_obj2 = nearestObjects [_obj,["Safe_EPOCH"],4];
@@ -41,10 +41,10 @@ while {true} do {
 				_hackername = (name (vehicle player));
 				_playerpos = (position player);
 				(findDisplay 602) closeDisplay 0;
-				HackingSafe = "";
 				ASH = [0,_hackeruid,_hackername,_playerpos];
 				publicVariableServer "ASH";
-				publicVariable HackingSafe;
+				sleep 0.1;
+				[] execVM "compile\fn_clientKick.sqf";
 			};
 			if (!_lock) then {
 			_obj2 = nearestObjects [_obj,["LockBox_EPOCH"],4];
