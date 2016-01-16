@@ -1,31 +1,66 @@
 // Author: Demellion (Dismal Team) for Epoch Mod
-if !(hasInterface) then {
-    "ASH" addPublicVariableEventHandler {_this select 1 call fn_access_block};
-fn_access_block = {
-	argument = _this select 0;
-	hack_uid = _this select 1;
-	hack_name = _this select 2;
-	hack_pos = _this select 3;
-	publicVariable "hack_uid";
-	publicVariable "hack_name";
-	
-    if (argument == 0) then {
-		 {[format["%1 (%2) BANNED, REASON - [SAFE/LOCKBOX HACK]",hack_uid,hack_name],0,0.7,10,2] spawn bis_fnc_dynamictext} remoteExecCall ["bis_fnc_call", 0]; 
-		_this = format ['%4 |ASH| - %2 (%1) VIOLATED vault at %3 (FPS: %5, TICK: %6)',hack_uid,hack_name,hack_pos,time,diag_fps,diag_tickTime];
-		"ARMA_LOG" callExtension format ["ASH_LOG:%1",_this];
-		"ARMA_BAN" callExtension format[':%1 \\SafeHack (%2)',hack_uid,hack_name];
-		diag_log format ["ASH: %1",_this];	
+private ["_obj","_obj2","_lock","_lock2","_distance","_playerpos","_hackername","_hackeruid","_timeout"];
+_timeout = 0;
+while {true} do {
+	_obj = nearestObject [(position player), "Safe_EPOCH"];
+	if (!isNull _obj) then {
+	_distance = player distance _obj;
+		if ((player distance _obj) < 4) then {
+		_lock = _obj getVariable ["Epoch_Locked",false];
+			if ((_lock) && (!isNull (findDisplay 602))) then {
+				_hackeruid = (getPlayerUID player);
+				_hackername = (name (vehicle player));
+				_playerpos = (position player);
+				(findDisplay 602) closeDisplay 0;
+				ASH = [1,_hackeruid,_hackername,_playerpos];
+				publicVariableServer "ASH";
+				sleep 0.1;
+				[] execVM "compile\fn_clientKick.sqf";
+			};
+			if (!_lock) then {
+			_obj2 = nearestObjects [_obj,["Safe_EPOCH"],4];
+			_lock2 = {_x getVariable ["Epoch_Locked",false];} forEach _obj2;
+				if (_lock2  && (_timeout == 0) && (!isNull (findDisplay 602))) then {
+				_hackeruid = (getPlayerUID player);
+				_hackername = (name (vehicle player));
+				_playerpos = (position player);
+				ASH = [2,_hackeruid,_hackername,_playerpos];
+				publicVariableServer "ASH";
+				_timeout = 30;
+				};
+			};
+		};
 	};
-	if (argument == 1) then {
-		{[format["%1 (%2) KICKED, REASON - [SAFE/LOCKBOX HACK]",hack_uid,hack_name],0,0.7,10,2] spawn bis_fnc_dynamictext} remoteExecCall ["bis_fnc_call", 0];
-		_this = format ['%4 |ASH| - %2 (%1) VIOLATED vault at %3 (FPS: %5, TICK: %6)',hack_uid,hack_name,hack_pos,time,diag_fps,diag_tickTime];
-		"ARMA_LOG" callExtension format ["ASH_LOG:%1",_this];
-		diag_log format ["ASH: %1",_this];	
-	};		
-	if (argument == 2) then {
-		_this = format ['%4 |ASH| - %2 (%1) ACCESSED vault nearby locked one at %3 (FPS: %5, TICK: %6)',hack_uid,hack_name,hack_pos,time,diag_fps,diag_tickTime];
-		"ARMA_LOG" callExtension format ["ASH_LOG:%1",_this];
-		diag_log format ["ASH: %1",_this];
-	};	
-  };
+	_obj = nearestObject [(position player), "LockBox_EPOCH"];
+	if (!isNull _obj) then {
+	_distance = player distance _obj;
+		if ((player distance _obj) < 4) then {
+		_lock = _obj getVariable ["Epoch_Locked",false];
+			if ((_lock) && (!isNull (findDisplay 602))) then {
+				_hackeruid = (getPlayerUID player);
+				_hackername = (name (vehicle player));
+				_playerpos = (position player);
+				(findDisplay 602) closeDisplay 0;
+				ASH = [1,_hackeruid,_hackername,_playerpos];
+				publicVariableServer "ASH";
+				sleep 0.1;
+				[] execVM "compile\fn_clientKick.sqf";
+			};
+			if (!_lock) then {
+			_obj2 = nearestObjects [_obj,["LockBox_EPOCH"],4];
+			_lock2 = {_x getVariable ["Epoch_Locked",false];} forEach _obj2;
+				if (_lock2  && (_timeout == 0) && (!isNull (findDisplay 602))) then {
+				_hackeruid = (getPlayerUID player);
+				_hackername = (name (vehicle player));
+				_playerpos = (position player);
+				ASH = [2,_hackeruid,_hackername,_playerpos];
+				publicVariableServer "ASH";
+				_timeout = 30;
+				};
+			};
+		//systemChat format["ACCESS LOG: object: %1, locked: %2, distance: %3 nearest objects:%4",_obj,_lock,_distance,_obj2]; 
+		};
+	};
+	sleep 1;
+	if (_timeout > 0) then {_timeout = _timeout - 1} else {_timeout = 0;};
 };
