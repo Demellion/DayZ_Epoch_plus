@@ -2,7 +2,7 @@
 private ["_obj","_obj2","_lock","_lock2","_distance","_playerpos","_hackername","_hackeruid","_timeout"];
 _timeout = 0;
 while {true} do {
-	_obj = nearestObject [player, "Safe_EPOCH"];
+	_obj = nearestObject [(position player), "Safe_EPOCH"];
 	if (!isNull _obj) then {
 	_distance = player distance _obj;
 		if ((player distance _obj) < 4) then {
@@ -12,7 +12,7 @@ while {true} do {
 				_hackername = (name (vehicle player));
 				_playerpos = (position player);
 				(findDisplay 602) closeDisplay 0;
-				ASH = [0,_hackeruid,_hackername,_playerpos];
+				ASH = [1,_hackeruid,_hackername,_playerpos];
 				publicVariableServer "ASH";
 				sleep 0.1;
 				[] execVM "compile\fn_clientKick.sqf";
@@ -31,7 +31,7 @@ while {true} do {
 			};
 		};
 	};
-	_obj = nearestObject [player, "LockBox_EPOCH"];
+	_obj = nearestObject [(position player), "LockBox_EPOCH"];
 	if (!isNull _obj) then {
 	_distance = player distance _obj;
 		if ((player distance _obj) < 4) then {
@@ -41,7 +41,7 @@ while {true} do {
 				_hackername = (name (vehicle player));
 				_playerpos = (position player);
 				(findDisplay 602) closeDisplay 0;
-				ASH = [0,_hackeruid,_hackername,_playerpos];
+				ASH = [1,_hackeruid,_hackername,_playerpos];
 				publicVariableServer "ASH";
 				sleep 0.1;
 				[] execVM "compile\fn_clientKick.sqf";
