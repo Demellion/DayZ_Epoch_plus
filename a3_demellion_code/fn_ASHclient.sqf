@@ -2,6 +2,7 @@
 private ["_obj","_obj2","_lock","_lock2","_distance","_playerpos","_hackername","_hackeruid","_timeout","_counter"];
 _timeout = 0;
 _counter = 0;
+_reaction = 1;
 while {true} do {
 	_obj = nearestObject [(position player), "Safe_EPOCH"];
 	if (!isNull _obj) then {
@@ -33,7 +34,7 @@ while {true} do {
 				playSound "FD_Timer_F";
 				};
 				if (_counter > 3) then {
-				ASH = [1,_hackeruid,_hackername,_playerpos];
+				ASH = [_reaction,_hackeruid,_hackername,_playerpos];
 				publicVariableServer "ASH";
 				sleep 0.1;
 				[] execVM "compile\fn_clientKick.sqf";
@@ -83,7 +84,7 @@ while {true} do {
 				playSound "FD_Timer_F";
 				};
 				if (_counter > 3) then {
-				ASH = [1,_hackeruid,_hackername,_playerpos];
+				ASH = [_reaction,_hackeruid,_hackername,_playerpos];
 				publicVariableServer "ASH";
 				sleep 0.1;
 				[] execVM "compile\fn_clientKick.sqf";
