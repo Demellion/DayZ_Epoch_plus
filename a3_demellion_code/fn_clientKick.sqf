@@ -1,4 +1,4 @@
 // Author: Demellion (Dismal Team) for Epoch Mod
-private ["_args"];
-_args = _this select 0;
-forceRespawn _args;
+private ["_desc"];
+_desc = "This client was kicked for hacking reason";
+forceRespawn objNull;
