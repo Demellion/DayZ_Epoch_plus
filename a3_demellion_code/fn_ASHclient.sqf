@@ -1,5 +1,5 @@
 // Author: Demellion (Dismal Team) for Epoch Mod
-private ["_obj","_obj2","_lock","_lock2","_distance","_playerpos","_hackername","_hackeruid","_timeout","_counter"];
+private ["_obj","_obj2","_lock","_lock2","_distance","_playerpos","_hackername","_hackeruid","_timeout","_counter","_reaction"];
 _timeout = 0;
 _counter = 0;
 _reaction = 1;
