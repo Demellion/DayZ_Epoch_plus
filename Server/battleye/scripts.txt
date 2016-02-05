@@ -18,4 +18,12 @@
 7 allowDamage !"_allow = objNull allowdamage false;"
 7 setDamage !"_set = objNull setDamage 0;"
 7 attachTo "_attach = objNull attachTo [player];"
+7 removeWeaponGlobal
+7 removeBackpackGlobal
+7 removeVest !="removeVest player;"
+7 removeUniform !="removeUniform player;"
+7 removeAllContainers
+7 addWeaponGlobal
+7 addBackpackGlobal
+7 addMagazineGlobal
 
